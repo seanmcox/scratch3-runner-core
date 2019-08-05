@@ -15,5 +15,5 @@ public interface Broadcast {
 	/**
 	 * @return the name
 	 */
-	public Object getName();
+	public String getName();
 }
