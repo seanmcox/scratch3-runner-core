@@ -16,4 +16,10 @@ public interface Variable {
 	 * @return the value
 	 */
 	public Object getValue();
+
+	/**
+	 * 
+	 * @param value
+	 */
+	public void setValue(Object value);
 }

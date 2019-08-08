@@ -26,8 +26,7 @@ public interface Opcode {
 	 */
 	BOOLEAN,
 	/**
-	 * Indicates that the value should be an encoded reference to a block.
-	 * The string identifier of the meta block will be passed in.
+	 * Indicates that the value is some kind of custom object, generally, these would be the result of evaluating a special OpcodeValue type of operation.
 	 */
 	POINTER_META,
 	/**
@@ -63,7 +62,7 @@ public interface Opcode {
 
 	/**
 	 * 
-	 * @return An map associating parameters with data types.
+	 * @return An map associating parameters with data types, or null if the set of parameters can vary.
 	 */
 	public java.util.Map<String,DataType> getArgumentTypes();
 }
