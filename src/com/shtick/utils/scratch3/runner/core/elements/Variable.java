@@ -8,9 +8,9 @@ package com.shtick.utils.scratch3.runner.core.elements;
 public interface Variable {
 	
 	/**
-	 * @return the name
+	 * @return the id
 	 */
-	public String getName();
+	public String getID();
 
 	/**
 	 * @return the value

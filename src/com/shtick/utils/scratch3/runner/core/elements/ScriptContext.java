@@ -45,7 +45,7 @@ public interface ScriptContext {
 	 * Resolves the name first in the current context and next in the parent context, if any.
 	 * 
 	 * @param name
-	 * @return The value of the given variable, or null if the variable is undefined.
+	 * @return The variable with the given name, or null if there is no such variable.
 	 */
 	public Variable getContextVariableByName(String name);
 
@@ -53,7 +53,7 @@ public interface ScriptContext {
 	 * Resolves the name first in the current context and next in the parent context, if any.
 	 * 
 	 * @param name
-	 * @return The value of the given variable, or null if the variable is undefined.
+	 * @return The broadcast with the given name, or null if there is no such broadcast.
 	 */
 	public Broadcast getContextBroadcastByName(String name);
 
